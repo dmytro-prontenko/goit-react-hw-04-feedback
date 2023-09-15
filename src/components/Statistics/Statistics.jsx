@@ -21,7 +21,7 @@ const Statistics = ({ data, total, positivePercentage }) => {
       </p>
       <p className="positive-feedbacks">
         <span className="percentage">Positive feedbacks: </span>
-        <span className="quant">{positivePercentage()}%</span>
+        <span className="quant">{positivePercentage(data.good)}%</span>
       </p>
     </>
   ) ;

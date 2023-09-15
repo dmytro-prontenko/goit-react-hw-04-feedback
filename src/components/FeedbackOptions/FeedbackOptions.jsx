@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import './FeedbackOptions.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  const buttons = options.map(state => {
+  const buttons = options.map(option => {
     return (
       <button
         className="button btn"
         onClick={onLeaveFeedback}
-        key={state}
-        name={state}
+        key={option}
+        name={option}
       >
-        {state.toUpperCase()}
+        {option.toUpperCase()}
       </button>
     );
   });
