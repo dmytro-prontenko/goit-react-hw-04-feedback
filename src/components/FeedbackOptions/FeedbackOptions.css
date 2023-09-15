@@ -1,0 +1,20 @@
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #778da9;
+  border: 1px solid #415a77;
+  color: #1b263b;
+
+  &:hover {
+    background-color: #415a77;
+    color: #c7c8c4;
+  }
+}
